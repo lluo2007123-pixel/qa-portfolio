@@ -1,0 +1,5 @@
+Bug ID,Title,Feature,Severity,Priority,Steps to Reproduce,Expected Behavior,Actual Behavior,Impact,Screenshots/Recording,Status
+RP-BUG-001,Unable to submit after editing added unit,Add Units,High,High,"1. Add unit 2. Confirm 3. Edit 4. Confirm again","Checkbox remains and submission allowed","Checkbox disappears, cannot submit","Blocks order submission","",Open
+RP-BUG-002,Pickup allows quantity 0 submission,Pickup Unit,High,High,"1. Go to pickup page 2. Leave quantity 0 3. Click confirm","Prevent submission or show error","Form submits with 0 quantity","Invalid requests possible","",Open
+RP-BUG-003,First unit cannot be edited after address update,Long Term Rentals,High,High,"1. Add unit without address 2. Add address 3. Add another unit 4. Edit","All units editable","First unit locked","Cannot fix placement errors","",Open
+RP-BUG-004,Map rescales on resize or iOS scroll,Map Interaction,Medium,Medium,"1. Resize browser OR scroll on iOS","Map remains stable","Map auto rescales","Disrupts placement accuracy","",Open
