@@ -68,7 +68,7 @@ The following modules will be tested:
 ## 4. Test Environment
 
 ### 4.1 Devices
-- iPhone (iOS 26)
+- iPhone 13, iOS 17
 
 ### 4.2 Network Conditions
 - Wi-Fi 
