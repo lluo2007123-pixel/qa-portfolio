@@ -1,7 +1,5 @@
 # WUVO Spot – Test Plan
 
----
-
 ## 1. Introduction
 
 ### 1.1 Project Overview
@@ -14,7 +12,6 @@ The purpose of this test plan is to:
 - Ensure a smooth and user-friendly experience
 - Reduce production risks
 
----
 
 ## 2. Scope
 
@@ -36,7 +33,6 @@ The following modules will be tested:
 - Third-party map service reliability
 - Network provider performance
 
----
 
 ## 3. Test Strategy
 
@@ -68,34 +64,27 @@ The following modules will be tested:
 - Simulate real-world usage
 - Identify edge cases and hidden bugs
 
----
 
 ## 4. Test Environment
 
 ### 4.1 Devices
-- iPhone (iOS 15+)
-- Android devices (Android 10+)
+- iPhone (iOS 26)
 
 ### 4.2 Network Conditions
-- Wi-Fi (strong/weak)
-- Mobile data (4G/5G)
-- Offline mode
+- Wi-Fi 
+- Mobile data (5G)
+- Offline
 
 ### 4.3 Tools
-
-- Test Case Management: Excel / Google Sheets
 - API Testing: Postman
-- Bug Tracking: Jira / Trello
-- Screen Recording: Loom / OBS
-
----
+- Bug Tracking: Jira
+- Screen Recording: Loom 
 
 ## 5. Entry and Exit Criteria
 
 ### 5.1 Entry Criteria
 - Requirements are defined
 - App build is available and stable
-- Test environment is ready
 
 ### 5.2 Exit Criteria
 - All critical and high-priority bugs are resolved
@@ -103,18 +92,13 @@ The following modules will be tested:
 - Pass rate ≥ 90%
 - No blocker defects remain
 
----
-
 ## 6. Test Deliverables
 
 - Test Plan Document
 - Test Cases (Excel)
 - Bug Reports
 - API Test Report
-- Test Execution Summary
-
----
-
+- 
 ## 7. Risk Analysis
 
 | Risk                         | Impact | Mitigation |
@@ -123,3 +107,55 @@ The following modules will be tested:
 | Location inaccuracies        | Medium | Real-world movement testing |
 | Notification delays          | Medium | Test under different networks |
 | App crashes                  | High   | Perform stress testing |
+
+## 8. High-Level Test Scenarios
+
+### Dashboard
+- View all items
+- Check connection status
+- Navigate to other features
+
+### Device Pairing
+- Add new device
+- Handle connection failures
+- Prevent duplicate pairing
+
+### Find Item
+- Radar accuracy
+- Sound trigger functionality
+- Signal strength updates
+
+### Map View
+- Display last known location
+- Timestamp accuracy
+- Navigation integration
+
+### Lost Mode
+- Enable/disable lost mode
+- Receive updates
+- Ensure privacy
+
+### Alerts
+- Trigger out-of-range alerts
+- Customize distance
+- Notification delivery
+
+### Find My Phone
+- Trigger phone ring
+- Work in silent mode
+
+### Lost & Found
+- Enter valid/invalid Spot ID
+- Contact owner securely
+
+## 9. Defect Management
+
+### Severity Levels
+- Critical: App crash, data loss
+- Major: Core feature not working
+- Minor: UI/UX issues
+
+### Bug Lifecycle
+New → Assigned → In Progress → Fixed → Retest → Closed
+
+---
